@@ -132,8 +132,13 @@ class SeleniumRobot(Robot):
 if __name__ == '__main__':
     robot = SeleniumRobot(verbose=True, headless=False)
 
+    ini = time()
+
     try:
         robot.initialize_browser()
         robot.execute_all()
     finally:
         robot.driver.quit()
+
+    fin = time()
+    print(f'[+] Total time execution: {fin-ini} seconds')
