@@ -2,6 +2,8 @@
 
 Robôs feitos em Python (Selenium e Requests) que baixam PDF de nota fiscal no site de Belém do Pará de acordo com dados fornecidos.
 
+Os PDFs ficam salvos em `data/pdfs`
+
 ## Requisitos
 
 Para executar os robôs é necessário ter Python 3.10 ou superior e também instalar as bibliotecas necessárias utilizando o comando abaixo:
