@@ -36,3 +36,12 @@ finally:
 ```
 
 Acima, o robô feito em Selenium irá executar exibindo logs e mostrando a navegação em tempo real.
+
+De forma muito semelhante, o robô feito com Requests possui apenas o parâmetro `verbose`, que por padrão possui valor `False`.
+
+```python
+robot = RequestsRobot(verbose=True)
+
+robot.initialize_session()
+robot.execute_all()
+```
